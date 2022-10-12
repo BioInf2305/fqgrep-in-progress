@@ -1,0 +1,4 @@
+fqgrep:
+    - modules/nf-core/fqgrep/**
+    - tests/modules/nf-core/fqgrep/**
+

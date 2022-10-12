@@ -1,0 +1,68 @@
+name: "fqgrep"
+description: search for user-defined reference and alternative sequences in paired-end fastq files;unix-grep like function for paired-end fastq files
+keywords:
+  - grep
+  - fastq
+tools:
+  - "fqgrep":
+      description: "Search a pair of fastq files for reads that match a given ref or alt sequence"
+      homepage: "https://github.com/fulcrumgenomics/fqgrep"
+      documentation: "https://github.com/fulcrumgenomics/fqgrep"
+      tool_dev_url: "https://github.com/fulcrumgenomics/fqgrep"
+      doi: ""
+      licence: "['MIT']"
+
+input:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test_1']
+        Note that id should be prefix of the one of the paired-end fastq files
+  - reads:
+      type: file
+      description: paired-end fastq file
+      pattern: "*.fastq.gz"
+  - refSeq:
+      type: string
+      description: user-defined reference sequence to be searched in paired-end fastq files
+  - altSeq:
+      type: string
+      description: user-defined alternative sequence to be searched in paired-end fastq files
+
+output:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test_1']
+  - versions:
+      type: file
+      description: File containing the version of fqgrep
+      pattern: "fqgrep.versions.txt"
+  - refSeq1:
+      type: file
+      description: the reads from R1 fastq file containing the refSeq 
+      pattern: "REF_*.R1.fastq.gz"
+  - refSeq2:
+      type: file
+      description: the reads R2 fastq file containing the refSeq 
+      pattern: "REF_*.R2.fastq.gz"
+  - altSeq1:
+      type: file
+      description: the reads from R1 fastq file containing the altSeq 
+      pattern: "ALT_*.R1.fastq.gz"
+  - altSeq2:
+      type: file
+      description: the reads from R2 fastq file containing the altSeq
+      pattern: "ALT_*.R2.fastq.gz"
+  - bothSeq1:
+      type: file
+      description: the reads from R1 fastq file containing both refSeq and altSeq 
+      pattern: "BOTH_*.R1.fastq.gz"
+  - bothSeq2:
+      type: file
+      description: the reads from R2 fastq file containing both refSeq and altSeq
+      pattern: "BOTH_*.R2.fastq.gz"
+authors:
+  - "@fulcrumgenomics"

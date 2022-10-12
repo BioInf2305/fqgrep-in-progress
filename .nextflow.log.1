@@ -1,0 +1,60 @@
+Oct-12 11:10:08.668 [main] DEBUG nextflow.cli.Launcher - $> nextflow run ./tests/modules/nf-core/fqgrep -entry test_fqgrep -c ./tests/config/nextflow.config -c ./tests/modules/nf-core/fqgrep/nextflow.config --outdir /tmp/tmp1v5gmzul -work-dir /tmp/tmplwu1a92h
+Oct-12 11:10:08.752 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.5
+Oct-12 11:10:09.532 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/tests/modules/nf-core/fqgrep/nextflow.config
+Oct-12 11:10:09.535 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/./tests/config/nextflow.config
+Oct-12 11:10:09.536 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/./tests/modules/nf-core/fqgrep/nextflow.config
+Oct-12 11:10:09.536 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/tests/modules/nf-core/fqgrep/nextflow.config
+Oct-12 11:10:09.536 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/tests/config/nextflow.config
+Oct-12 11:10:09.536 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/tests/modules/nf-core/fqgrep/nextflow.config
+Oct-12 11:10:09.549 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 11:10:09.593 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 11:10:10.509 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-12 11:10:10.566 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-12 11:10:10.586 [main] INFO  nextflow.cli.CmdRun - Launching `./tests/modules/nf-core/fqgrep/main.nf` [cheesy_coulomb] DSL2 - revision: b7c2692f81
+Oct-12 11:10:10.599 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/maulik/.nextflow/plugins; core-plugins: nf-amazon@1.7.2,nf-azure@0.13.2,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+Oct-12 11:10:10.600 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-12 11:10:10.613 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-12 11:10:10.614 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-12 11:10:10.617 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-12 11:10:10.627 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-12 11:10:10.679 [main] DEBUG nextflow.Session - Session uuid: de95829f-58b3-42a8-9c2a-1c237108ba06
+Oct-12 11:10:10.679 [main] DEBUG nextflow.Session - Run name: cheesy_coulomb
+Oct-12 11:10:10.680 [main] DEBUG nextflow.Session - Executor pool size: 128
+Oct-12 11:10:10.716 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.5 build 5708
+  Created: 15-07-2022 16:09 UTC (18:09 CEST)
+  System: Linux 3.10.0-1127.19.1.el7.x86_64
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 17.0.3-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 76417@headnode01.vetmed.lafuga.genzentrum.lmu.de [141.84.180.3]
+  CPUs: 128 - Mem: 2 TB (360.7 GB) - Swap: 0 (0)
+Oct-12 11:10:10.747 [main] DEBUG nextflow.Session - Work-dir: /tmp/tmplwu1a92h [tmpfs]
+Oct-12 11:10:10.748 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /data/medugorac/Shared/Maulik/tools/fqgrep_module_2/tests/modules/nf-core/fqgrep/bin
+Oct-12 11:10:10.765 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-12 11:10:10.783 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-12 11:10:10.827 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-12 11:10:10.845 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 129; maxThreads: 1000
+Oct-12 11:10:11.015 [main] DEBUG nextflow.Session - Session start invoked
+Oct-12 11:10:11.235 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-12 11:10:12.159 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-12 11:10:12.159 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-12 11:10:12.165 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-12 11:10:12.174 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=128; memory=2 TB; capacity=128; pollInterval=100ms; dumpInterval=5m
+Oct-12 11:10:12.263 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: test_fqgrep:FQGREP, FQGREP
+Oct-12 11:10:12.264 [main] DEBUG nextflow.Session - Ignite dataflow network (1)
+Oct-12 11:10:12.264 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > test_fqgrep:FQGREP
+Oct-12 11:10:12.266 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-12 11:10:12.266 [main] DEBUG nextflow.Session - Session await
+Oct-12 11:10:12.548 [Actor Thread 3] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=4; maxSize=4; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-12 11:10:12.565 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/sarscov2/illumina/fastq/test_1.fastq.gz to work dir: /tmp/tmplwu1a92h/stage/f9/3315a94a622abb23d4ff6977cd9c42/test_1.fastq.gz
+Oct-12 11:10:12.621 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/modules/data/genomics/sarscov2/illumina/fastq/test_2.fastq.gz to work dir: /tmp/tmplwu1a92h/stage/07/c472e315f653d58ac3033f84abe3de/test_2.fastq.gz
+Oct-12 11:10:12.782 [Actor Thread 5] INFO  nextflow.conda.CondaCache - Creating env using conda: bioconda::fqgrep=0.1.0 [cache /tmp/tmplwu1a92h/conda/env-273f0395245be757950610eaa7279dfd]
+Oct-12 11:10:37.772 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - 'conda' create complete env=bioconda::fqgrep=0.1.0 path=/tmp/tmplwu1a92h/conda/env-273f0395245be757950610eaa7279dfd
+Oct-12 11:10:37.888 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-12 11:10:37.897 [Task submitter] INFO  nextflow.Session - [f0/2a883a] Submitted process > test_fqgrep:FQGREP (test_1)
+Oct-12 11:10:38.870 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: test_fqgrep:FQGREP (test_1); status: COMPLETED; exit: 0; error: -; workDir: /tmp/tmplwu1a92h/f0/2a883a2880a8b4ea3f7289ec0253cd]
+Oct-12 11:10:38.938 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-12 11:10:38.940 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-12 11:10:38.956 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.9s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=2; peakMemory=3 GB; ]
+Oct-12 11:10:39.151 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-12 11:10:39.163 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
